@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+
+class ClassWord{
+  String word = ""; //Слово
+  String translation = ""; //Перевод
+  ClassWord(this.word, this.translation);
+}
+
  
 class Word extends StatelessWidget {
-  const Word({super.key});
+ final String myWord;
+ final String myTranslation;
+  const Word({super.key, required this.myWord, required this.myTranslation});
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +26,7 @@ class Word extends StatelessWidget {
             ) ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(' Слово',
+            child: Text(myWord,
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color:  Color.fromARGB(255, 0, 0, 0),
@@ -37,7 +47,7 @@ class Word extends StatelessWidget {
             ) ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(' Перевод',
+            child: Text(myTranslation,
                 textAlign: TextAlign.right,
                 style: TextStyle(
                     color:  Color.fromARGB(255, 0, 0, 0),
