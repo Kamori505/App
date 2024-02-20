@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/vidgets/Word.dart';
 
-import 'components/word.dart';
-import 'widgets/screen2.dart';
+import 'vidgets/Screen.dart';
 
 
 void main() {
