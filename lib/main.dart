@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widgets/Word.dart';
+import 'package:flutter_application_1/widgets/Screen2.dart';
+
 
 import 'widgets/Screen.dart';
 
